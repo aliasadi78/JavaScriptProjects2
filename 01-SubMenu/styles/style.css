@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+body {
+    background-color: #f5eec2;
+}
+
+.header {
+    width: 100%;
+    background-color: #416a59;
+    padding: 1rem;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 3rem;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img img:hover {
+    cursor: pointer;
+}
+
+.submenu {
+    background-color: #fff;
+    padding: 2rem;
+    direction: rtl;
+    position: absolute;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    /* display: none; */
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.3s ease-in-out;
+}
+
+.submenu::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    transform: rotate(45deg);
+}
+
+.submenu div {
+    padding: 0.25rem;
+    margin: 0.25rem;
+
+}
+
+.name {
+    text-align: center;
+}
+
+.name div:nth-child(2) {
+    font-size: 0.8rem;
+    color: darkgray;
+}
+
+.active {
+    /* display: block; */
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
