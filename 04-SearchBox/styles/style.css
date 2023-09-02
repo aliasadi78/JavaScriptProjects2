@@ -1,0 +1,42 @@
+@import url('reset.css');
+body {
+    background: linear-gradient(90deg, #f0a04b,#f6c453)
+}
+
+.search {
+    position: relative;
+    height: 50px;
+}
+.input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20px;
+    height: 50px;
+    transition: width 0.4s ease;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 0;
+    right: 0;
+    height: 50px;
+    transition: right 0.4s ease;
+}
+
+.search button:hover{
+    cursor: pointer;
+}
+.search.active input{
+    width: 300px;
+    
+}
+.active .btn {
+    right: 266px;
+}
