@@ -1,0 +1,60 @@
+@import url('reset.css');
+body {
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+.header {
+    width: 100%;
+    height: 6rem;
+    background: #52ab98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.container {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.sidebar {
+    position: fixed;
+    background-color: #347265;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.sidebar ul li {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.sidebar ul li a {
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    /* background-color: #fff; */
+}
+
+.active {
+    left: 0%;
+}
