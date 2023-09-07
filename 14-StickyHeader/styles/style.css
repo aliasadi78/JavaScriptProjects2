@@ -1,0 +1,24 @@
+@import url('reset.css');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: #2d2d2d;
+    color: #fff;
+    width: 100%;
+}
+.header a {
+    padding: 1rem 0.5rem;
+}
+.header ul {
+    display: flex;
+}
+.header ul li{
+    margin: 1rem 0.5rem;
+}
+.active {
+    position: fixed;
+    transition: position 0.3s ease;
+}
