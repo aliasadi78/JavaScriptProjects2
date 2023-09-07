@@ -1,5 +1,6 @@
 const header = document.querySelector('.header')
-console.log(header.getBoundingClientRect());
+const header1 = document.querySelector('.header1')
 window.addEventListener('scroll', () => {
-    header.classList.toggle('active', window.pageYOffset > header.getBoundingClientRect().height)
+    let h = header1.getBoundingClientRect().height + header.getBoundingClientRect().height
+    header.classList.toggle('active', window.pageYOffset > h)
 })

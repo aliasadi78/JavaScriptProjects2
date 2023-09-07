@@ -9,6 +9,15 @@
     color: #fff;
     width: 100%;
 }
+.header1 {
+    height: 10rem;
+    background-color: #fffbf0;
+    color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header a {
     padding: 1rem 0.5rem;
 }
@@ -21,4 +30,6 @@
 .active {
     position: fixed;
     transition: position 0.3s ease;
+    top: 0;
+    right: 0;
 }
