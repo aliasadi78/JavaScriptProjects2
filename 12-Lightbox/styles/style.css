@@ -1,0 +1,98 @@
+@import url('reset.css');
+
+body {
+    background-color: cadetblue;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .container {
+    position: relative;
+    /* width: 200px; */
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .img-box {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+}
+.container .img-box img{
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid darkcyan;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+}
+.container .img-box img:hover{
+    opacity: 1;
+}
+.container .img-box.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .img-box.active  img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    left: 50px;
+    bottom: 50px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    opacity: 1;
+}
+
+.container .img-box  h2 {
+    opacity: 0;
+    visibility: hidden;
+}
+.container .img-box.active  h2 {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.container .img-box .content {
+    position: absolute;
+    right: 50px;
+    left: 50px;
+    bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    transform: translateY(200px);
+}
+
+.container .img-box.active .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+
