@@ -1,0 +1,56 @@
+@import url('reset.css');
+body {
+    background-color: darkolivegreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: crimson; 
+}
+
+.white {
+    background-color: white; 
+    color: black;
+}
+
+.green {
+    background-color: darkgreen;
+}
+
+span {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
