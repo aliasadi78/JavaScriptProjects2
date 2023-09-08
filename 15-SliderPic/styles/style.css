@@ -1,0 +1,73 @@
+@import url('reset.css');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: #2d2d2d;
+    color: #fff;
+    width: 100%;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 100;
+}
+
+.header a {
+    padding: 1rem 0.5rem;
+}
+.header ul {
+    display: flex;
+}
+.header ul li{
+    margin: 1rem 0.5rem;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container img.active {
+    opacity: 1;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+}
+
+.btns span {
+    background-color: beige;
+    color: #2d2d2d;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns span:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: #fff;
+}
